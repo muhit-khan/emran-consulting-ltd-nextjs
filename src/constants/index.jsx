@@ -2,18 +2,18 @@ import { SocialMediaProfiles } from "@/components/SocialMedia";
 
 export const navigation = [
   {
-    title: "Work",
+    title: "Sister Concerns",
     links: [
-      { title: "AH MANA3RAF", href: "/work/amazonclone" },
-      { title: "AH MANA3RAF", href: "/work/bazar" },
-      { title: "AH MANA3RAF", href: "/work/blog101" },
+      { title: "Pykup Industries", href: "https://pykup.org" },
+      { title: "Fly Ruposhi", href: "https://pykup.org" },
+      { title: "Emran & Brothers Co", href: "https://pykup.org" },
       {
         title: (
           <>
             See all <span aria-hidden="true">&rarr;</span>
           </>
         ),
-        href: "/work",
+        href: "/",
       },
     ],
   },

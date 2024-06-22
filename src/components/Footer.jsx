@@ -1,9 +1,11 @@
-import React from "react";
+"use client";
+
 import Container from "./Container";
 import FadeIn from "./FadeIn";
 import FooterNavigation from "./FooterNavigation";
 import Logo from "./Logo";
 import Link from "next/link";
+import React, { useState } from "react";
 
 const ArrowIcon = (props) => {
   return (
@@ -19,17 +21,51 @@ const ArrowIcon = (props) => {
 };
 
 const NewsletterForm = () => {
+  const [formStatus, setFormStatus] = useState('');
+  const [formMessage, setFormMessage] = useState('');
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setFormStatus('');
+    setFormMessage('');
+
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setFormStatus('success');
+        setFormMessage('Your message has been sent successfully!');
+      } else {
+        setFormStatus('error');
+        setFormMessage('There was an issue sending the message. Please try again.');
+      }
+    } catch (error) {
+      setFormStatus('error');
+      setFormMessage('There was an issue sending the message. Please try again.');
+    }
+  };
+
   return (
-    <form className="max-w-sm">
+    <form className="max-w-sm" onSubmit={handleSubmit}>
+      <input type="hidden" name="access_key" value="b80ed2d6-e70c-4860-8a2c-be137a53c0bf" />
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
         Sign up for our newsletter
       </h2>
       <p className="mt-4 text-sm text-neutral-700">
-        Subscribe to get the latest design news, articles, resources and
-        inspiration.
+        Subscribe to get the latest design news, articles, resources and inspiration.
       </p>
       <div className="relative mt-6">
         <input
+          name="News_Letter_Email"
           type="email"
           placeholder="Email address"
           autoComplete="email"
@@ -46,6 +82,7 @@ const NewsletterForm = () => {
           </button>
         </div>
       </div>
+      {formStatus && <p className={`mt-2 text-sm ${formStatus === 'success' ? 'text-green-600' : 'text-red-600'}`}>{formMessage}</p>}
     </form>
   );
 };
@@ -61,13 +98,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
-          <Link href={"/"} aria-label="Home">
+          <Link href="/" aria-label="Home">
             <Logo className="h-8" fillOnHover>
-              Emran Consultancy
+              Emran Consulting
             </Logo>
           </Link>
           <p className="text-sm text-neutral-700">
-            © Emran Consultancy Ltd. {new Date().getFullYear()}
+            © Emran Consulting Ltd. {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>

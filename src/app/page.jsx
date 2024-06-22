@@ -12,12 +12,17 @@ export default function Home() {
       <Container className="mt-24 sm:mt-32">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Make your online presence a reality with us!
+            Emran Consulting
           </h1>
+          <h2 className="mt-4 font-bold text-2xl text-neutral-700">
+            - A 360 Consultancy Firm!
+          </h2>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a group of developer working at the intersection of design
-            and technology. It is a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            Welcome to Emran Consultancy, where we provide 360-degree solutions
+            to transform your business. Our expert team navigates every aspect
+            of your challenges, ensuring holistic and strategic guidance for sustainable
+            growth and success. Trust Emran Consultancy to be your
+            comprehensive partner in achieving excellence.
           </p>
         </FadeIn>
       </Container>
