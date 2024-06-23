@@ -1,24 +1,17 @@
 import Image from "next/image";
-import logoBrightPath from "../images/clients/bright-path/logo-light.svg";
+
+import arroRealty from "../images/clients/arro-realty/arro-realty-full-white.png";
 import logoFamilyFund from "../images/clients/family-fund/logo-light.svg";
 import logoGreenLife from "../images/clients/green-life/logo-light.svg";
-import logoHomeWork from "../images/clients/home-work/logo-light.svg";
-import logoMailSmirk from "../images/clients/mail-smirk/logo-light.svg";
-import logoNorthAdventures from "../images/clients/north-adventures/logo-light.svg";
-import logoPhobiaLight from "../images/clients/phobia/logo-light.svg";
 import logoUnseal from "../images/clients/unseal/logo-light.svg";
 import Container from "./Container";
 import FadeIn, { FadeInStagger } from "./FadeIn";
 
 const clients = [
-  ["Phobia", logoPhobiaLight],
+  ["Arro Realty", arroRealty],
   ["Family Fund", logoFamilyFund],
   ["Unseal", logoUnseal],
-  ["Mail Smirk", logoMailSmirk],
-  ["Home Work", logoHomeWork],
   ["Green Life", logoGreenLife],
-  ["Bright Path", logoBrightPath],
-  ["North Adventures", logoNorthAdventures],
 ];
 
 const Clients = () => {
@@ -27,19 +20,24 @@ const Clients = () => {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We have worked with hundreds of amazing people
+            We have worked with some of amazing people and organizations
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
         <FadeInStagger faster>
           <ul
             role="list"
-            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
+            className="items-center mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
           >
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image
+                    src={logo}
+                    alt={client}
+                    height={150}
+                    unoptimized
+                  />
                 </FadeIn>
               </li>
             ))}

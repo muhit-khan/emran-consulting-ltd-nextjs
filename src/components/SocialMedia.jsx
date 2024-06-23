@@ -2,7 +2,6 @@ import Link from "next/link";
 import clsx from "clsx";
 import {
   BsFacebook,
-  BsTwitter,
   BsGithub,
   BsYoutube,
   BsLinkedin,
@@ -22,7 +21,7 @@ export const SocialMediaProfiles = [
   },
   {
     title: "linkedin",
-    href: "https://www.linkedin.com/in/muhit-khan/",
+    href: "https://www.linkedin.com/in/shariaremran/",
     icon: BsLinkedin,
   },
 ];

@@ -5,7 +5,7 @@ export const navigation = [
     title: "Sister Concerns",
     links: [
       { title: "Pykup Industries", href: "https://pykup.org" },
-      { title: "Fly Ruposhi", href: "https://pykup.org" },
+      { title: "Ratna Airways", href: "https://pykup.org" },
       { title: "Emran & Brothers Co", href: "https://pykup.org" },
       {
         title: (
