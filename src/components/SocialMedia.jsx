@@ -20,8 +20,8 @@ export const SocialMediaProfiles = [
     icon: BsFacebook,
   },
   {
-    title: "linkedin",
-    href: "https://www.linkedin.com/in/shariaremran/",
+    title: "Linkedin",
+    href: "https://www.linkedin.com/company/emran-consulting/",
     icon: BsLinkedin,
   },
 ];

@@ -6,6 +6,7 @@ import FooterNavigation from "./FooterNavigation";
 import Logo from "./Logo";
 import Link from "next/link";
 import React, { useState } from "react";
+import { invert } from "./Logo";
 
 const ArrowIcon = (props) => {
   return (
@@ -97,11 +98,13 @@ const Footer = () => {
             <NewsletterForm />
           </div>
         </div>
-        <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
+        <div className="mb-20 mt-24 flex flex-wrap items-center justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
           <Link href="/" aria-label="Home">
-            <Logo className="h-8" fillOnHover>
-              Emran Consulting Ltd.
-            </Logo>
+            {/* <Logo className="h-8" fillOnHover>
+            </Logo> */}
+            <div className="w-48 -ml-2">
+              <Logo invert={invert} />
+            </div>
           </Link>
           <p className="text-sm text-neutral-700">
             © Emran Consulting Ltd. {new Date().getFullYear()}

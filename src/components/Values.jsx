@@ -14,42 +14,32 @@ const Values = () => {
         />
       </div>
       <SectionIntro
-        eyebrow="Our values"
-        title="Balancing reliability and innovation"
+        eyebrow="Our Values"
+        title="Balancing Reliability and Innovation"
       >
         <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
+          At Emran Consulting Ltd., we pride ourselves on blending cutting-edge technology with time-tested methods to deliver exceptional results. We stay true to our core values, ensuring every project reflects our commitment to excellence.
         </p>
       </SectionIntro>
       <Container className="mt-24">
         <GridList>
           <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+            We start every partnership by seamlessly integrating your brand into our framework, ensuring a flawless and professional look that matches your vision.
           </GridListItem>
           <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
+            Our track record speaks for itself – we always meet our deadlines, leveraging years of experience to deliver quality work quickly and reliably.
           </GridListItem>
           <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
+            Understanding your unique business needs is our priority. We customize our solutions to fit perfectly, ensuring you get exactly what you need.
           </GridListItem>
-          <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
+          <GridListItem title="Transparent">
+            We believe in complete transparency throughout our process, ensuring you are informed and confident in every decision we make together.
           </GridListItem>
           <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
+            Building long-term relationships with our clients is key. We go beyond just delivering a product – we aim to be a trusted partner for years to come.
           </GridListItem>
           <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
+            We are constantly exploring new technologies and methodologies to stay ahead of the curve, bringing you the most innovative solutions available.
           </GridListItem>
         </GridList>
       </Container>

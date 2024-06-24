@@ -15,7 +15,7 @@ export default function Home() {
             Emran Consulting Ltd.
           </h1>
           <h2 className="mt-4 font-bold text-2xl text-neutral-700">
-            - A 360 Consultancy Firm!
+            - A 360° Consultancy Firm!
           </h2>
           <p className="mt-6 text-xl text-neutral-600 text-justify">
             Welcome to Emran Consulting Ltd., where we provide 360-degree solutions

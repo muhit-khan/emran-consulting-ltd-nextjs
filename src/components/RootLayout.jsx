@@ -27,7 +27,9 @@ const Header = ({
       <div className="flex items-center justify-between">
         {/* Logo */}
         <Link href={"/"} aria-label="Home">
-          <Logo invert={invert}>EC</Logo>
+          <div className="w-48 -ml-2">
+            <Logo invert={invert} />
+          </div>
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href={"/contact"} invert={invert}>
@@ -59,6 +61,7 @@ const Header = ({
     </Container>
   );
 };
+
 const NavigationRow = ({ children }) => {
   return (
     <div className="even:mt-px sm:bg-neutral-950">
@@ -103,6 +106,7 @@ const RootLayoutInner = ({ children }) => {
   const closeRef = useRef();
   const navRef = useRef();
   const shouldReduceMotion = useReducedMotion();
+
   useEffect(() => {
     function onClick(event) {
       if (event.target.closest("a")?.href === window.location.href) {
@@ -115,6 +119,7 @@ const RootLayoutInner = ({ children }) => {
       window.removeEventListener("click", onClick);
     };
   }, []);
+
   return (
     <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
       <header>
