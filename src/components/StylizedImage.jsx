@@ -1,3 +1,4 @@
+//StylizedImage.jsx
 import clsx from "clsx";
 import Image from "next/image";
 import React, { useId } from "react";

@@ -41,6 +41,7 @@ const SocialMedia = ({ className, invert = false }) => {
           <Link
             href={item.href}
             aria-label={item.title}
+            target="_blank"
             className={clsx(
               "transition",
               invert ? "hover:text-neutral-200" : "hover:text-neutral-700"

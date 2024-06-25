@@ -103,7 +103,7 @@ const Footer = () => {
             {/* <Logo className="h-8" fillOnHover>
             </Logo> */}
             <div className="w-48 -ml-2">
-              <Logo invert={invert} />
+              <Logo />
             </div>
           </Link>
           <p className="text-sm text-neutral-700">
