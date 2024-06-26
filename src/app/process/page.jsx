@@ -11,9 +11,7 @@ const ProcessPage = () => {
     <>
       <PageIntro eyebrow="Our process" title="How we work">
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          At Emran Consulting Ltd., our approach to every project is structured into three key phases: Discover, Build, and Deliver. This systematic process ensures that we thoroughly understand your needs, develop tailored solutions, and deliver exceptional results.
         </p>
       </PageIntro>
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">

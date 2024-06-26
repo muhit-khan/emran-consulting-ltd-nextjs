@@ -6,15 +6,16 @@ import Blockquote from "./Blockquote";
 const Build = () => {
   return (
     <Section title="Build" image={{ src: imageLaptop, shape: 2 }}>
+
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          After the discovery phase, we create a detailed plan for each project and begin working on it. The plan is very technical, often making the project take longer.
+          After the discovery phase, our expert team translates the product requirements into actionable solutions. This stage involves detailed design, engineering, and development work. Whether it’s creating innovative aerospace components, designing robust structural systems, or developing cutting-edge IT solutions, we focus on precision and quality.
         </p>
         <p>
-          Each client gets a dedicated account manager to ensure good communication while hiding the true progress of the project. They act as a middleman, handling client questions while the development team reuses code from open source projects.
+          Our engineers and developers work collaboratively, employing best practices and advanced technologies to build systems that meet your specifications and exceed your expectations. Each client gets a dedicated person of contact from our end to ensure good communication and seamless project management.
         </p>
         <p>
-          Our account managers are trained to respond to client emails late at night, a few days after receiving them. This makes us seem very busy and discourages clients from requesting changes.
+          Our team facilitate effective communication, handling client questions promptly and ensuring transparency throughout the development process. We are committed to delivering high-quality results while keeping our clients informed and engaged every step of the way.
         </p>
       </div>
       <Blockquote

@@ -14,27 +14,23 @@ const Discover = () => {
           of their business.
         </p>
         <p>
-          Our team of experts conducts thorough investigations, while our account
-          managers review essential documents. Our senior security specialists
-          perform advanced security assessments to gain insights into{" "}
-          <strong className="font-semibold text-neutral-950">business</strong>{" "}
-          operations, which we then pass on to our forensic accounting team.
+          Our team of experts conducts comprehensive research and analysis, performing customer surveys and interviews, and engaging in detailed discussions with your team to identify key objectives and constraints. This phase involves gathering all necessary information, performing feasibility studies, and defining project scope.
         </p>
         <p>
-          After completing a comprehensive audit, we provide a detailed{" "}
-          <strong className="font-semibold text-neutral-950">plan</strong> and
-          a budget tailored to your needs.
+          After completing a comprehensive audit, we translate these insights into specific product requirements, providing a detailed{" "}
+          <strong className="font-semibold text-neutral-950">plan</strong> and <strong className="font-semibold text-neutral-950"> the budget </strong>
+
+          tailored to your needs. This process requires specialized skills such as technical writing and strategic planning.
         </p>
+
       </div>
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
         Included in this phase
       </h3>
       <TagList className="mt-4">
-        <TagListItem>Comprehensive Investigation</TagListItem>
-        <TagListItem>Feasibility Assessment</TagListItem>
-        <TagListItem>Employee Surveys</TagListItem>
-        <TagListItem>Concept Validations</TagListItem>
-        <TagListItem>Detailed Forensic Reviews</TagListItem>
+        <TagListItem>Gathering Information</TagListItem>
+        <TagListItem>Feasibility Studies</TagListItem>
+        <TagListItem>Defining Project Scope</TagListItem>
       </TagList>
     </Section>
   );
