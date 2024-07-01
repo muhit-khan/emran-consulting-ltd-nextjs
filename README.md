@@ -5,6 +5,7 @@ This repository contains the source code for the Emran Consulting Ltd website, b
 ## Table of Contents
 - [Demo](#demo)
 - [Features](#features)
+- [Technologies](#technologies)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -19,6 +20,13 @@ Check out the live demo of the website: [Emran Consulting Ltd](https://consultin
 - Styled with Tailwind CSS
 - SEO optimized
 - Easy to customize and extend
+
+## Technologies
+- **Next.js**: Framework for React applications
+- **React**: JavaScript library for building user interfaces
+- **Tailwind CSS**: Utility-first CSS framework
+- **Node.js**: JavaScript runtime for server-side development
+- **Netlify**: Deployment and hosting platform for modern web applications
 
 ## Installation
 To get a local copy up and running, follow these simple steps:
